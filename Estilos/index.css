@@ -1,0 +1,86 @@
+     /* Setear los valores por default */
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+html {
+     font-size: 62.5%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+     /* Setear los valores por default */
+
+     /* Variables */
+:root {
+     --fondo: rgb(198, 235, 245);
+     --navbar: rgb(169, 229, 247);
+     --fuente-navbar: rgb(23, 24, 24);
+     --hover-navbar: rgb(15, 152, 194);
+}
+     /* Variables */
+
+
+body{
+     background-color: var(--fondo);
+}
+
+header{
+     background-color: var(--navbar);
+}
+
+nav{
+     display: flex;
+}
+
+.navbar-left{
+     display: flex;
+     margin-left: 12rem;
+
+}
+.navbar-right{
+     display: flex;
+     align-content: flex-end ;
+}
+
+.navbar-right ul li a{
+     text-decoration: none;
+     color: var(--fuente-navbar);
+     padding: .8rem;
+     border-radius: .8rem;
+     font-size: 1.4rem;
+}
+
+.navbar-right ul li a:hover{
+     color: var(--hover-navbar);
+}
+
+.img-navbar{
+     display: grid;
+     justify-content: start;
+     width: 20rem;
+     margin: 1rem;
+     grid-area: auto;
+}
+
+.menu-navbar{
+     border: none;
+     background-color: var(--navbar);
+}
+.navbar-left ul, .navbar-right ul{
+     margin-top: 2.4rem;
+     list-style: none;
+     display: flex;
+     align-items: center;
+     color: var(--fuente-navbar);
+}
+
+main{
+     background-color: var(--fondo);
+}
+
+footer{
+     background-color: var(--fondo);
+
+}
